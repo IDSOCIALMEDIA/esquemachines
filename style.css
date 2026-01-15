@@ -146,6 +146,20 @@ body {
 .received { background-color: #202c33; color: white; border-top-left-radius: 0; }
 .sent { background-color: #005c4b; color: white; margin-left: auto; border-top-right-radius: 0; }
 
+/* ESTILOS PARA A NOVA IMAGEM NO CHAT */
+.image-msg-container {
+    padding: 5px; /* Menos padding para imagens */
+}
+
+.chat-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 5px;
+}
+/* FIM DOS ESTILOS DA NOVA IMAGEM */
+
 .time {
     display: block;
     text-align: right;
@@ -184,6 +198,7 @@ body {
     width: 90%;
     max-width: 400px;
     animation: slideUp 0.5s ease-out;
+    z-index: 100;
 }
 
 .dot { height: 8px; width: 8px; background-color: #008cc9; border-radius: 50%; display: inline-block; }
