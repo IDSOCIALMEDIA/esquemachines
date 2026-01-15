@@ -22,7 +22,7 @@ window.onload = function () {
     startTimer(fiveMinutes, display);
     
     // Rotação de nomes na notificação
-    const names = ["Carla Oliveira", "João Silva", "Ana Souza", "Pedro Santos", "Mariana Costa"];
+    const names = ["Carla Oliveira", "João Silva", "Ana Souza", "Pedro Santos", "Mariana Costa", "Rafaela Silva", "Joana Souza", "Josefa Santos", "Maria Costa"];
     const notifElem = document.querySelector("#notification strong");
     let index = 0;
 
