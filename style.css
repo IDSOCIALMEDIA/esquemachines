@@ -146,17 +146,26 @@ body {
 .received { background-color: #202c33; color: white; border-top-left-radius: 0; }
 .sent { background-color: #005c4b; color: white; margin-left: auto; border-top-right-radius: 0; }
 
-/* ESTILOS PARA A NOVA IMAGEM NO CHAT */
+/* ESTILOS PARA A NOVA IMAGEM NO CHAT - CORRIGIDO */
 .image-msg-container {
-    padding: 5px; /* Menos padding para imagens */
+    padding: 5px 5px 10px 5px; /* Um pouco mais de espaço em baixo */
 }
 
 .chat-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    /* Definimos uma largura máxima fixa para não explodir no ecrã */
+    max-width: 220px; 
+    /* Garante que em ecrãs muito pequenos ela se adapte, mas nunca passe de 220px */
+    width: 100%; 
+    height: auto; /* Mantém a proporção correta da imagem */
+    border-radius: 8px; /* Cantos arredondados */
     display: block;
-    margin-bottom: 5px;
+}
+
+/* Ajuste para o texto que fica logo abaixo da imagem */
+.image-msg-container p {
+    margin-top: 8px !important;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 /* FIM DOS ESTILOS DA NOVA IMAGEM */
 
